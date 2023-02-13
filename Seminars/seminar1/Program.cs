@@ -49,3 +49,4 @@
 // Console.WriteLine($"Last digit of {num} is {result}");
 
 
+
