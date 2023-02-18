@@ -47,16 +47,20 @@
 // 7 -> да
 // 1 -> нет
 
-void Zadanie2 (int number)
-{
-if(number > 0 && number <= 7 ){
-    if (number == 6 || number == 7){
-        Console.WriteLine("да");
-    } else{
-        Console.WriteLine("нет");
-    }
-}
-}
-Console.WriteLine("Enter number: ");
-int randomNumber = Convert.ToInt32(Console.ReadLine());
-Zadanie2(randomNumber);
+// void Zadanie2 (int number)
+// {
+// if(number > 0 && number <= 7 ){
+//     if (number == 6 || number == 7){
+//         Console.WriteLine("да");
+//     } else{
+//         Console.WriteLine("нет");
+//     }
+// }
+// }
+// Console.WriteLine("Enter number: ");
+// int randomNumber = Convert.ToInt32(Console.ReadLine());
+// Zadanie2(randomNumber);
+
+//Задание1.  Напишите программу, которая принимает на вход координаты точки (X и Y), 
+//причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, 
+//в которой находится эта точка.
