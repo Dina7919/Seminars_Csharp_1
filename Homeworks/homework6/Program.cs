@@ -45,20 +45,35 @@
 
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
-void PointOfIntersection (int b1, int k1, int b2, int k2)
+void Array(double[] numbers)
 {
-    double y = (k2*b1 - k1*b2)/(k2-k1);
-    double x = (y-b1)/k1;
-    Console.WriteLine($"Point of Intersection is ({x};{y})");
+    Console.Write("[ ");
+    for (int i = 0; i < 2; i++)
+    {
+        Console.Write(numbers[i] + " ");
+    }
+    Console.Write("]");
+    Console.WriteLine();
+}
+
+double[] PointOfIntersection (double b1, double k1, double b2, double k2)
+{
+    double[] coord = new double[2];
+    double x = (b1-b2)/(k2-k1);
+    coord[0] = x;
+    double y = b1*x + b1;
+    coord[1] = y;
+    return coord;
 }
 Console.WriteLine("Input b1: ");
-int b1 = Convert.ToInt32(Console.ReadLine());
+double b1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input k1: ");
-int k1 = Convert.ToInt32(Console.ReadLine());
+double k1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input b2: ");
-int b2 = Convert.ToInt32(Console.ReadLine());
+double b2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input k2: ");
-int k2 = Convert.ToInt32(Console.ReadLine());
-PointOfIntersection(b1, k1, b2, k2);
+double k2 = Convert.ToInt32(Console.ReadLine());
+double[] coord = PointOfIntersection(b1, k1, b2, k2);
+Array(coord);
 
 
